@@ -1,0 +1,1 @@
+# Ejercio-tipo-parcial
