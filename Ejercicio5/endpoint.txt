@@ -1,0 +1,50 @@
+Ejercicio :Discuta y defina solo los endpoints para los siguientes servicios Indique recurso,
+ verbo, parámetros del recurso y parámetros get..
+
+ 1) Obtener el detalle completo de un vuelo determinado dado su nro_vuelo.
+ Recurso: vuelo.
+ Verbo: Get.
+ Parametros Get:-.
+ Parametros Recurso: vuelo, id_vuelo, nro_vuelo
+ URL: vuelo / nro_vuelo / 234
+
+ 2)Obtener todas las ciudades en las que la aerolínea tiene alcance.
+ Recurso: vuelo.
+ Verbo: Get.
+ Parametros Get:-.
+ Parametros Recurso: vuelo, ciudad, 
+ URL: vuelo/ ciudad.
+
+ 3)Insertar un vuelo nuevo en el sistema.
+ Recurso: vuelo.
+ Verbo: Post.
+ Parametros Get:-.
+ Parametros Recurso: nro_vuelo,fecha_salida,ciudad_origen_id_fk,ciudad_destino_id_fk,estado.
+ URL: vuelo.
+
+ 4)Obtener todos los vuelos que aun no salieron (estado=”en espera”) 
+ Recurso: vuelo.
+ Verbo: Get.
+ Parametros Get: estadp.
+ Parametros Recurso: 
+ URL: vuelo?estado=espera.
+
+ 5)Obtener todos los vuelos entre dos ciudades para un día determinado.
+ Recurso: vuelo.
+ Verbo: Get.
+ Parametros Get: 
+ Parametros Recurso: vuelo,ciudad_origen_id_fk, ciudad_destino_id_fk,fecha_salida;
+ URL: vuelo/Barcelona/Paris/2021-11-04 .
+
+ 6)Obtener todos los vuelos con destino a Barcelona.
+ Recurso: vuelo.
+ Verbo: Get.
+ Parametros Get: ciudad_destino_id_fk,
+ Parametros Recurso: ;
+ URL: vuelo?ciudad=Barcelona.
+
+
+
+
+
+
